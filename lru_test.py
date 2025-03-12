@@ -47,10 +47,10 @@ class TestAPICachePerformance(unittest.TestCase):
         elapsed_second = time.perf_counter() - start
 
         # Asegurarse de que las respuestas son iguales
-        self.assertEqual(data1, data2, "Los datos obtenidos de la API y la caché no coinciden.")
+        self.assertEqual(data1, data2, "Los datos obtenidos de la API y la caché coinciden.")
 
         # Asegurarse de que la segunda consulta sea más rápida que la primera
-        self.assertTrue(elapsed_second < elapsed_first, "La segunda llamada no fue más rápida que la primera.")
+        self.assertTrue(elapsed_second < elapsed_first, "La segunda llamada fue más rápida que la primera.")
 
         # Imprimir los tiempos de ejecución
         print(f"\nTiempo de respuesta sin caché: {elapsed_first:.4f} segundos")
