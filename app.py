@@ -6,7 +6,6 @@ API_KEY = "1914d65b01794850b5de17b12936d02e"
 BASE_URL = "https://api.weatherbit.io/v2.0/current"
 
 def fetch_weatherbit(city: str, cache: lruCache) -> dict:
-    """Obtiene los datos del clima desde la caché o la API de Weatherbit."""
     url = f"{BASE_URL}?city={city}&key={API_KEY}&units=metric"
     
     cached_response = cache.get(url)
