@@ -1,6 +1,5 @@
 import requests
 from lru_cache import lruCache, lruNode
-from collections import OrderedDict
 
 API_KEY = "1914d65b01794850b5de17b12936d02e"
 BASE_URL = "https://api.weatherbit.io/v2.0/current"
