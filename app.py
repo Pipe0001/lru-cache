@@ -62,5 +62,3 @@ if __name__ == "__main__":
     print(cache.cache)
 
 
-    print("\nContenido de la caché después de 5 solicitudes:")
-    print(cache.cache)
