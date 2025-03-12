@@ -2,8 +2,6 @@ import time
 import unittest
 from lru_cache import lruCache, lruNode
 from app import fetch_weatherbit
-import requests
-from collections import OrderedDict
 
 class TestLRUCache(unittest.TestCase):
     def test_put_and_get(self):
