@@ -1,4 +1,4 @@
-```markdown
+
 # LRU Cache
 
 Este repositorio implementa una **caché LRU (Least Recently Used)** en Python, que almacena un número limitado de elementos y elimina los menos usados cuando se alcanza la capacidad máxima. Además, se incluye un sistema de caché para hacer peticiones a la API de **Weatherbit** y optimizar las consultas mediante el uso de la caché.
